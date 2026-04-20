@@ -1,0 +1,91 @@
+<!-- Cristina Roque LFG Dashboard 04/26 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquadUp | LFG Dashboard</title>
+    <link rel="icon" type="image/png" href="SquadUpLogo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="SquadUpLogo.png" alt="SquadUp Logo" class="logo-img">
+    </header>
+
+    <div class="layout-grid">
+        <nav>
+            <ul>
+                <li><a href="index.html">Discovery Feed</a></li>
+                <li><a href="lfg.html">LFG Dashboard</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="about.html">Mission Statement</a></li>
+                <li><a href="join.html">Join SquadUp</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="content-box">
+                <form class="filter-bar">
+                    <div class="input-group">
+                        <label for="game-select">Game:</label>
+                        <select id="game-select" name="game">
+                            <option value="" disabled selected>Select a Game...</option>
+                            <option value="ow2">Overwatch 2</option>
+                            <option value="valorant">Valorant</option>
+                            <option value="apex">Apex Legends</option>
+                            <option value="cs2">Counter-Strike 2</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="platform-select">Platform:</label>
+                        <select id="platform-select" name="platform">
+                            <option value="any" selected>Any Platform</option>
+                            <option value="pc">PC</option>
+                            <option value="ps5">PlayStation 5</option>
+                            <option value="xbox">Xbox</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="region-select">Region:</label>
+                        <select id="region-select" name="region">
+                            <option value="na-east">NA East</option>
+                            <option value="na-west">NA West</option>
+                            <option value="eu">Europe</option>
+                        </select>
+                    </div>
+                    
+                    <button type="button" class="primary-btn">Find Squads</button>
+                </form>
+
+                <div class="lobby-grid">
+                    <div class="card">
+                        <h3><img src="OWLogo.png" alt="Overwatch Logo" width="30" style="vertical-align: middle; margin-right: 10px;"> Overwatch 2</h3>
+                        <p>(Rank) Diamond</p>
+                        <p>Need: 2 Tanks</p>
+                        <p>3/5 Players</p>
+                        <button class="primary-btn">Squad Up</button>
+                    </div>
+                    <div class="card">
+                        <h3><img src="ValorantLogo.png" alt="Valorant Logo" width="30" style="vertical-align: middle; margin-right: 10px;"> Valorant</h3>
+                        <p>(Rank) Ascendant</p>
+                        <p>Need: Support</p>
+                        <p>4/5 Players</p>
+                        <button class="primary-btn">Squad Up</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Need help? <a href="mailto:croqu024@fiu.edu">Contact Support</a></p>
+    </footer>
+</body>
+</html>

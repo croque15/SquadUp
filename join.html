@@ -1,0 +1,78 @@
+<!-- Cristina Roque Join SquadUp Page 04/26 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquadUp | Join the Squad</title>
+    <link rel="icon" type="image/png" href="SquadUpLogo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="SquadUpLogo.png" alt="SquadUp Logo" class="logo-img">
+    </header>
+
+    <div class="layout-grid">
+        <nav>
+            <ul>
+                <li><a href="index.html">Discovery Feed</a></li>
+                <li><a href="lfg.html">LFG Dashboard</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="about.html">Mission Statement</a></li>
+                <li><a href="join.html">Join SquadUp</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="content-box">
+                <h2>Join the Squad</h2>
+                <p>Sign up for our newsletter to get notified when SquadUp officially launches plus weekly highlights of the best community clips and tournament invites.</p>
+                
+                <form action="index.html" method="GET"> 
+                    <div class="input-group">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="squadup@squadup.com" required style="width: 100%; padding: 12px; background: #0d0d15; border: 1px solid #333; color: white; border-radius: 5px; box-sizing: border-box;">
+                    </div>
+
+                    <div class="input-group">
+                        <p style="margin-bottom: 10px;">What do you want to see from us?</p>
+                        
+                        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+                            
+                            <div class="checkboxes">
+                                <input type="checkbox" id="news" name="prefs" value="news" checked>
+                                <label for="news">SquadUp News</label><br>
+                                
+                                <input type="checkbox" id="clips" name="prefs" value="clips" style="margin-top: 10px;">
+                                <label for="clips">Weekly Top Gameplay Clips</label><br>
+                                
+                                <input type="checkbox" id="tournaments" name="prefs" value="tournaments" style="margin-top: 10px;">
+                                <label for="tournaments">Community Tournament Invites</label>
+                            </div>
+
+                            <img src="CuriousGamer.png" alt="Curious Gamer" style="width: 150px;">
+                            
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="primary-btn" style="margin-top: 20px;">Subscribe to SquadUp</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Need help? <a href="mailto:croqu024@fiu.edu">Contact Support</a></p>
+    </footer>
+</body>
+</html>
